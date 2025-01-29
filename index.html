@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>John Doe</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm a passionate web developer with experience in HTML, CSS, and JavaScript. I love creating responsive and user-friendly websites.</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>A responsive website built with HTML and CSS.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>An interactive web application using JavaScript.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>A mobile-first design project.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: john.doe@example.com</p>
+        <p>LinkedIn: linkedin.com/in/johndoe</p>
+        <p>GitHub: github.com/johndoe</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 John Doe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
